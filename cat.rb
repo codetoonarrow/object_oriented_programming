@@ -8,13 +8,19 @@ class Cat
     @meal_time      = meal_time
   end
 
+#Added a time that cat eats at and converted time.
   def eats_at()
     if (@meal_time) <= 11
-      puts "#{@meal_time} AM"
+       "#{@meal_time} AM"
     else
-      puts "#{(@meal_time - 12)}PM"
+       "#{(@meal_time - 12)} PM"
     end
 end
+
+#Returns a string of the cat telling you all about itself
+def meow
+  puts "Hello my name is #{@name} I like to eat #{@preferred_food} at #{eats_at}"
+  end
 end
 
 #Create two new instances
