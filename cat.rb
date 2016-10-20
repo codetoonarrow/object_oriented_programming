@@ -26,3 +26,6 @@ end
 #Create two new instances
   fluffy = Cat.new('Fluff', 'Raw fish', 16)
   hobbes = Cat.new('Hobbes', 'Peanut butter samvich', 18)
+
+fluffy.meow
+hobbes.meow
